@@ -61,19 +61,14 @@
             android:text="Balasan dari Admin" />
 
         <EditText
+            style="@style/MyTextEditText.Shape.Disable"
             android:id="@+id/ed_response"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/def_margin"
             android:layout_marginTop="@dimen/def_margin_half"
-            android:background="@drawable/background_filled_white_radius_v2"
-            android:gravity="start"
             android:hint="Tulis Disini"
             android:minLines="5"
-            android:padding="@dimen/def_margin"
-            android:text="dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 "
-            android:textAlignment="textStart"
-            android:textSize="@dimen/h4" />
+            android:text="dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 " />
 
     </LinearLayout>
 </LinearLayout>

@@ -6,16 +6,21 @@
 
 - [themes.xml](https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/app/src/main/res/values/themes.xml)
 - [colors.xml](https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/app/src/main/res/values/colors.xml)
-- [background_filled_white_radius_v2.xml](https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/app/src/main/res/drawable/background_filled_white_radius_v2.xml)
 
 ```gradle
-
-    implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.2.3'
+    //maven { url 'https://jitpack.io' }
+    implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.2.x'
 ```
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -71,19 +76,14 @@
             android:text="Balasan dari Admin" />
 
         <EditText
+            style="@style/MyTextEditText.Shape.Disable"
             android:id="@+id/ed_response"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/def_margin"
             android:layout_marginTop="@dimen/def_margin_half"
-            android:background="@drawable/background_filled_white_radius_v2"
-            android:gravity="start"
             android:hint="Tulis Disini"
             android:minLines="5"
-            android:padding="@dimen/def_margin"
-            android:text="dummy_3 dummy_3 dummy_3 dummy_3 "
-            android:textAlignment="textStart"
-            android:textSize="@dimen/h4" />
+            android:text="dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 " />
 
     </LinearLayout>
 </LinearLayout>

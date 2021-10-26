@@ -13,36 +13,4 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-
-    <style name="MyTextContent.Background">
-        <item name="android:paddingStart">@dimen/space_half</item>
-        <item name="android:paddingLeft">@dimen/space_half</item>
-        <item name="android:paddingEnd">@dimen/space_half</item>
-        <item name="android:paddingRight">@dimen/space_half</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="MyTextContent.Background.GreenLow">
-        <item name="android:background">@drawable/shape_green_low</item>
-        <item name="android:textColor">@color/green_500</item>
-    </style>
-
-    <style name="MyTextContent.Background.RedLow">
-        <item name="android:background">@drawable/shape_red_low</item>
-        <item name="android:textColor">@color/red_500</item>
-    </style>
-
-    <style name="MyLinearLayout">
-        <item name="android:padding">@dimen/def_margin</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
-
-    <style name="MyLinearLayout.White">
-        <item name="android:background">@color/white</item>
-    </style>
-
-    <style name="MyLinearLayout.White.Rounded">
-        <item name="android:background">@drawable/background_filled_white_radius_v2</item>
-    </style>
 </resources>
