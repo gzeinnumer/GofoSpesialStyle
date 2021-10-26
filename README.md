@@ -1,7 +1,7 @@
 # GofoSpesialStyle
  
 <p align="center">
-  <img src="https://github.com/gzeinnumer/BaseUtils/blob/master/preview/bg.jpg"/>
+  <img src="https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/preview/preview_1.PNG"/>
 </p>
 
 - [themes.xml](https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/app/src/main/res/values/themes.xml)
