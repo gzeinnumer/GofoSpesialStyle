@@ -1,7 +1,7 @@
 # GofoSpesialStyle
  
 <p align="center">
-  <img src="https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/preview/preview_1.PNG"/>
+  <img src="https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/preview/preview_2.PNG"/>
 </p>
 
 - [themes.xml](https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/app/src/main/res/values/themes.xml)
@@ -12,23 +12,12 @@
     implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.2.x'
 ```
 
+- [activty_main.xml](https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/app/src/main/res/layout/activity_main.xml)
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+<LinearLayout ...>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
+    <LinearLayout ...>
 
         <TextView
             style="@style/MyTextContent.Background.GreenLow"
@@ -42,18 +31,10 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@color/gree_low_gofo"
-        android:gravity="center_vertical"
-        android:orientation="vertical">
+    <LinearLayout ...>
 
         <LinearLayout
-            style="@style/MyLinearLayout.White.Rounded"
-            android:layout_marginHorizontal="@dimen/def_margin"
-            android:layout_marginBottom="@dimen/def_margin">
+            style="@style/MyLinearLayout.White.Rounded">
 
             <TextView
                 style="@style/MyTextContent"
@@ -61,8 +42,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            style="@style/MyLinearLayout.White">
+        <LinearLayout style="@style/MyLinearLayout.White">
 
             <TextView
                 style="@style/MyTextContent"
@@ -76,18 +56,58 @@
             android:text="Balasan dari Admin" />
 
         <EditText
-            style="@style/MyTextEditText.Shape.Disable"
             android:id="@+id/ed_response"
-            android:layout_width="match_parent"
-            android:layout_marginHorizontal="@dimen/def_margin"
-            android:layout_marginTop="@dimen/def_margin_half"
-            android:hint="Tulis Disini"
-            android:minLines="5"
-            android:text="dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 " />
+            style="@style/MyTextEditText.Shape.Disable" />
 
+    </LinearLayout>
+
+    <LinearLayout ...>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyTextInputLayoutOutlinedBox.Spesial.V2"
+            android:hint="Alamat_toko_man">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/MyTextInputEditText.Spesial.V2"
+                android:maxLength="255" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyAutoCompleteTextViewFilledBox.V2"
+            android:hint="Provinsi_man">
+
+            <AutoCompleteTextView
+                style="@style/MyAutoCompleteTextView.V2" />
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 </LinearLayout>
 ```
+
+- [themes.xml](https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/app/src/main/res/values/themes.xml)
+```xml
+    <!--spesial for gofo-->
+    <style name="MyAutoCompleteTextViewFilledBox.V2">
+        <item name="android:background">@drawable/mygzn_text_input_edittext_3d_bot</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:textColorHint">@color/mygzn_indicator_text_color</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTextInputEditText.Spesial.V2">
+        <item name="android:background">@drawable/mygzn_text_input_edittext_3d_bot</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--spesial for gofo-->
+```
+- res->color
+  - [my_mtrl_indicator_text_color.xml](https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/app/src/main/res/color/my_mtrl_indicator_text_color.xml)
+  - [mygzn_indicator_text_color.xml](https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/app/src/main/res/color/mygzn_indicator_text_color.xml)
+
+- res->drawable
+  - [mygzn_text_input_edittext_3d_bot.xml](https://github.com/gzeinnumer/GofoSpesialStyle/blob/master/app/src/main/res/drawable/mygzn_text_input_edittext_3d_bot.xml)
 
 ---
 

@@ -11,9 +11,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/def_margin">
 
         <TextView
             style="@style/MyTextContent.Background.GreenLow"
@@ -28,9 +28,10 @@
     </LinearLayout>
 
     <LinearLayout
+        android:paddingTop="@dimen/def_margin"
+        android:paddingBottom="@dimen/def_margin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:background="@color/gree_low_gofo"
         android:gravity="center_vertical"
         android:orientation="vertical">
@@ -46,8 +47,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            style="@style/MyLinearLayout.White">
+        <LinearLayout style="@style/MyLinearLayout.White">
 
             <TextView
                 style="@style/MyTextContent"
@@ -61,8 +61,8 @@
             android:text="Balasan dari Admin" />
 
         <EditText
-            style="@style/MyTextEditText.Shape.Disable"
             android:id="@+id/ed_response"
+            style="@style/MyTextEditText.Shape.Disable"
             android:layout_width="match_parent"
             android:layout_marginHorizontal="@dimen/def_margin"
             android:layout_marginTop="@dimen/def_margin_half"
@@ -70,5 +70,37 @@
             android:minLines="5"
             android:text="dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 dummy_3 " />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white_low_v2"
+        android:padding="@dimen/def_margin">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_alamat_toko_p"
+            style="@style/MyTextInputLayoutOutlinedBox.Spesial.V2"
+            android:layout_marginTop="@dimen/space"
+            android:hint="Alamat_toko_man">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_alamat_toko"
+                style="@style/MyTextInputEditText.Spesial.V2"
+                android:maxLength="255" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_provinsi_p"
+            style="@style/MyAutoCompleteTextViewFilledBox.V2"
+            android:layout_marginTop="@dimen/space"
+            android:hint="Provinsi_man">
+
+            <AutoCompleteTextView
+                android:id="@+id/ed_provinsi"
+                style="@style/MyAutoCompleteTextView.V2" />
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 </LinearLayout>
